@@ -1,0 +1,14 @@
+@use "sass:math";
+
+.container {
+  max-width: $container-width + (2 * $gutter-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
+
+  @include media-breakpoint-down(sm) {
+    padding-right: math.div($gutter-width, 2);
+    padding-left: math.div($gutter-width, 2);
+  }
+}

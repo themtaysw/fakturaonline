@@ -1,0 +1,157 @@
+$--color-bacground: #f4f9fb;
+$--color-light-blue-new: #c9dfed;
+$--color-lighter-blue-new: #9fc9e3;
+$--color-blue-new: #097FB5;
+
+$--color-primary: #097FB5;
+$--color-primary-2: #097FB5;
+$--color-primary-dark-1: #263944 !default;
+$--color-primary-dark-2: #34495e;
+$--color-info: #909399;
+$--color-danger: #e82842;
+$--color-warning: #fe8f01;
+$--color-success: #22c476;
+$--color-white: #ffffff;
+$--color-text-regular: #222222;
+$--color-text-blue: #487285;
+$--color-gray-1: #5d5d5d;
+$--color-gray-2: #d5d5d5;
+$--color-gray-3: #959393;
+$--color-gray-4: #f1f1f1;
+$--color-gray-5: #f5f5f5;
+$--color-gray-6: #dedede;
+$--color-gray-7: #ebebeb;
+$--color-blue-light: #9ec7e0;
+$--color-black: #000000;
+$--color-info-lighter: #f1f1f1;
+
+$--color-text-primary: $--color-text-regular;
+
+$--font-size-base: 1rem;
+
+$--input-font-size: rem(14px);
+$--input-placeholder-color: #a2a2a2;
+
+$--main-padding: rem(25px);
+
+$--button-default-font-color: $--color-primary;
+$--button-font-weight: 700;
+$--button-border-radius: 4px;
+$--button-padding-vertical: rem(10px);
+$--button-padding-horizontal: rem(14px);
+
+$--button-small-font-size: rem(12px);
+$--button-small-border-radius: 4px;
+$--button-small-padding-vertical: rem(9px);
+$--button-small-padding-horizontal: rem(14px);
+
+$--button-large-font-size: rem(16px);
+$--button-large-padding-vertical: rem(15px);
+$--button-large-padding-horizontal: rem(20px);
+
+$--button-extra-large-font-size: rem(22px);
+$--button-extra-large-padding-vertical: rem(17px);
+$--button-extra-large-padding-horizontal: rem(25px);
+
+$--radio-font-weight: 700;
+$--radio-input-height: 16px;
+$--radio-input-width: 16px;
+$--radio-input-border: 2px solid;
+$--radio-input-border-color: $--color-gray-1;
+$--radio-input-border-radius: 50%;
+$--radio-input-border-color-hover: transparent;
+
+$--radio-checked-input-fill: $--color-primary;
+$--radio-checked-icon-color: $--color-white;
+$--radio-checked-input-border-color: $--color-primary;
+
+$--checkbox-font-weight: 700;
+$--checkbox-input-height: 16px;
+$--checkbox-input-width: 16px;
+$--checkbox-input-border: 2px solid;
+$--checkbox-input-border-color: $--color-gray-1;
+$--checkbox-input-border-radius: 4px;
+$--checkbox-input-border-color-hover: transparent;
+$--checkbox-checked-input-fill: $--color-primary;
+$--checkbox-checked-icon-color: $--color-white;
+$--checkbox-checked-input-border-color: $--color-primary;
+
+$--input-color: $--color-black;
+$--input-width: 100%;
+$--input-height: rem(34px);
+$--input-border: 1px solid #c9dfed;
+$--input-border-color: #c9dfed;
+$--input-border-radius: 4px;
+$--input-hover-border: #c9dfed;
+$--input-focus-border: $--color-primary;
+$--input-icon-color: $--color-gray-3;
+
+$--input-large-height: rem(40px);
+
+$--select-border-color-hover: $--color-primary;
+$--select-dropdown-shadow: none;
+$--select-dropdown-border: 1px solid $--color-primary;
+$--select-option-height: auto;
+$--select-option-hover-background: $--color-primary;
+$--select-option-selected: #dddddd;
+
+// set icon prefix
+$icon-prefix: "icon-";
+
+$--dropdown-menu-box-shadow: none;
+$--dropdown-menuItem-hover-color: $--color-primary-dark-2;
+
+$--table-border: 0;
+$--table-row-hover-background: #daf0f7;
+
+$--dialog-title-font-size: rem(27px);
+
+$--alert-padding: rem(10px) rem(5px) rem(10px) rem(20px);
+$--alert-border-radius: 4px;
+
+$--alert-success-color: #e8f9f1;
+$--alert-info-color: $--color-info-lighter;
+$--alert-danger-color: #fde9eb;
+
+$--card-padding-vertical: 15px;
+$--card-padding-horizontal: 35px;
+$--card-padding: rem($--card-padding-vertical) rem($--card-padding-horizontal);
+$--card-border-radius: 4px;
+$--card-border-color: $--color-gray-6;
+
+// breakpoints
+$--navbar-breakpoint: 940px;
+$--navbar-breakpoint-xl: 1200px;
+$--navbar-breakpoint-down: $--navbar-breakpoint;
+$--navbar-breakpoint-up: $--navbar-breakpoint - 1;
+
+$--breakpoint-ms: 480px;
+$--breakpoint-sm: 768px;
+$--breakpoint-md: 992px;
+
+$--xs: 550px;
+$--sm: 768px;
+$--md: 992px;
+$--lg: 1200px;
+$--xl: 1920px;
+
+$--border-color-base: #cbe0ed;
+
+$--pagination-button-width: 35.5px;
+$--pagination-button-height: 38px;
+$--pagination-border-radius: 4px;
+
+// variable for media queries mixin (npm: include-media)
+$breakpoints: (
+  xs: $--xs,
+  ms: $--breakpoint-ms,
+  sm: $--sm,
+  md: $--md,
+  lg: $--lg,
+  xl: $--xl,
+  navbarLg: $--navbar-breakpoint,
+  navbarXl: $--navbar-breakpoint-xl
+);
+
+// grid
+$grid-gutter-width: 30px;

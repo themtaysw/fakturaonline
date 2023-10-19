@@ -1,0 +1,95 @@
+.jumbotron {
+  position: relative;
+  background-color: $primary;
+  color: $white;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-top: 1rem;
+
+  @include media-breakpoint-down(md) {
+    padding: 2.5rem 0;
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  &.jumbotron-full-image {
+    padding: 0;
+
+    @include media-breakpoint-down(md) {
+      padding: 25px 0 0 0;
+    }
+
+    .header__objects-image {
+      position: static;
+      bottom: auto;
+      left: auto;
+      max-width: 100%;
+      z-index: 1;
+    }
+  }
+}
+
+.jumbotron__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include media-breakpoint-down(md) {
+    justify-content: center;
+  }
+}
+
+.jumbotron__text {
+  position: relative;
+  z-index: 2;
+  max-width: rem(565px);
+  padding: 3rem 1rem 0;
+
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.jumbotron__text--wide {
+  max-width: rem(610px);
+  padding: rem(40px) 0;
+
+  @include media('>sm') {
+    padding: rem(80px) 2rem;
+  }
+}
+
+.jumbotron__img {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.header__objects-image {
+  position: absolute;
+  bottom: 0;
+  left: 52%;
+  max-width: none;
+  z-index: 1;
+}
+
+.jumbotron__cta {
+  margin-top: 3.13rem;
+  display: inline-block;
+
+  p {
+    margin-top: 0.8em;
+    margin-bottom: 0;
+    text-align: center;
+    &::before {
+      margin-right: 7px;
+      vertical-align: bottom;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.block.jumbotron
+  .block__content
+    .jumbotron__content
+      .jumbotron__text
+        h1.h1 == t '.header_headline'
+        ul.list-highlights
+          li.list-highlights__item.list-highlights__item--icon == t '.header_list1'
+          li.list-highlights__item.list-highlights__item--icon == t '.header_list2'
+          li.list-highlights__item.list-highlights__item--icon == t '.header_list3'
+        .jumbotron__cta
+          = link_to t('.add_invoice'), root_path, class: 'el-button el-button--warning el-button--large el-button--invoice'
+          p == t '.free_invoice'
+      .jumbotron__img
+        = image_tag "header_image.png",
+                    width: 669,
+                    height: 556,
+                    alt: 'FakturaOnline.cz',
+                    class: 'header__objects-image'
+.stats-area__wrapper
+  .stats-area
+    .stats-area__content
+      .stats-area__single
+        h3 10 let
+        p působíme na trhu
+      .stats-area__single
+        h3 = t '.stats_area_title_2', amount: 10000
+        p == t '.stats_area_text_2', month: I18n.l(1.month.ago, format: "%B").downcase
+      .stats-area__single
+        h3 = t '.stats_area_title_3', amount: 50000
+        p == t '.stats_area_text_3', month: I18n.l(1.month.ago, format: "%B").downcase
+      .stats-area__single
+        h3 = t '.stats_area_title_4', amount: 10000
+        p == t '.stats_area_text_4'
+      .stats-area__single
+        h3 = t '.stats_area_title_5'
+        p == t '.stats_area_text_5'
+.hp-features
+  .container
+    .hp-features__content
+      .hp-features__single
+        .hp-features__img
+          = image_tag("export-pdf-ico.svg", alt: t('.feature_pdf_title'), width: 63, height: 71)
+        .hp-features__text
+          strong Vyplnit formulář a stáhnout PDF fakturu
+          p
+            ' Vystavení PDF faktury je jednoduché. Stačí vyplnit své identifikační údaje, které si můžete uložit pro další použití, údaje o odběrateli, přidat fakturované položky a kliknout na <em>Vystavit fakturu</em>. Hotovo
+            = link_to 'Vystaví se vám PDF faktura', root_path
+            ' , kterou můžete poslat e-mailem, nebo vytisknout.
+      .hp-features__single
+        .hp-features__img
+          = image_tag("bill-ico.svg")
+        .hp-features__text
+          strong = t '.feature_proforma_title'
+          p == t '.feature_proforma_text'
+      .hp-features__single
+        .hp-features__img
+          = image_tag("signature-ico.svg")
+        .hp-features__text
+          strong = t '.feature_signature_title'
+          p == t '.feature_signature_text'
+      .hp-features__single
+        .hp-features__img
+          = image_tag("layout-ico.svg")
+        .hp-features__text
+          strong = t '.feature_examples_title'
+          p = t '.feature_examples_text_html', link: root_path
+
+#hp_blogposts
+
+.button-area
+  .container
+    .button-area__content
+      = image_tag('ico-time_start.svg', class: 'button-area__icon', width: 51, height: 50)
+      .button-area__text = t '.start_using'
+      = link_to t('.add_invoice'), root_path, class: 'el-button el-button--warning el-button--large el-button--invoice'

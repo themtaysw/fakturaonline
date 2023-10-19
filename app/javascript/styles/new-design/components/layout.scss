@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-wrapper {
+  flex: 1 0 auto;
+  background-color: $blue-sky;
+}
+
+.main {
+  @extend .container;
+
+  margin: 0 auto 60px auto;
+  clear: both;
+  position: relative;
+  min-height: 359px;
+}
+
+.white-container {
+  border-radius: 8px;
+  background-color: $white;
+}
+
+.white-container--with-padding {
+  padding: rem(15px) rem(15px);
+  border-radius: 8px;
+  background-color: $white;
+
+  @media only screen and (min-width: $--breakpoint-sm) {
+    padding: rem(25px);
+  }
+}
+
+.white-container--with-padding-big-padding {
+  padding: rem(40px);
+}

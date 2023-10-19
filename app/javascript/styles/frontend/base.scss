@@ -1,0 +1,66 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  font-size: $--font-size-base;
+  /* stylelint-disable */
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  /* stylelint-enable */
+  background-color: #f4f9fb;
+  line-height: 1.5;
+}
+
+.page-content {
+  & > section {
+    width: 100%;
+  }
+}
+
+.wrapper {
+  padding: rem(25px);
+  background-color: $--color-white;
+
+  @include res(xs-only, $--breakpoints-spec) {
+    padding: rem(15px);
+  }
+}
+
+hr {
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-color: $--color-gray-5;
+}
+
+p {
+  small {
+    font-size: rem(13px);
+  }
+}
+
+.big {
+  font-size: rem(15px);
+}
+
+// dropdown
+
+.el-dropdown-menu {
+  .el-dropdown-menu__item {
+    display: list-item;
+  }
+  .el-dropdown-menu__item--with-icon {
+    padding-left: 3.2rem;
+  }
+}
+
+// helpers
+.no-wrap {
+  white-space: nowrap;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

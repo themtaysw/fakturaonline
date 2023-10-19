@@ -1,0 +1,66 @@
+.subscription-flash {
+  padding: 12px;
+  font-size: 14px;
+  color: $red;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 12px;
+    padding: 12px 0px;
+  }
+
+  .tarif-name {
+    padding-top: 0;
+    letter-spacing: 1px;
+  }
+
+  .el-button {
+    &::before {
+      font-size: 14px;
+      vertical-align: sub;
+      margin-right: 10px;
+      color: inherit;
+    }
+  }
+}
+
+.subscription-trial {
+  &::before {
+    font-size: 20px;
+    vertical-align: sub;
+    margin-right: 10px;
+    color: inherit;
+  }
+}
+
+.subscription-paynow {
+  color: $gray-700;
+}
+
+.subscription-arrow {
+  padding-top: 5px;
+  font-size: 8px;
+  margin: 0 20px;
+  color: inherit;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.flash__content {
+  background-color: $pink;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+}

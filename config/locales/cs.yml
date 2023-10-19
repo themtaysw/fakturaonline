@@ -1,0 +1,69 @@
+cs:
+  root:
+    index:
+      meta:
+        description: Aplikace pro online fakturaci pomůže při generování faktur online. Můžete si zkusit vygenerovat fakturu zdarma. Spravujete své faktury jednoduše a online.
+      title: FakturaOnline.cz a jednoduše v pdf
+      add_invoice: Vystavit fakturu
+      eet: EET napojení od 1. července
+      feature_examples_text_html: Systém FakturaOnline.cz umožňuje vystavení nejen běžných faktur - daňového dokladu, faktury pro neplátce DPH, zálohových faktur, či tzv. <strong>proforma faktury</strong>. Než vystavíte jakýkoliv druh faktury, podívejte se na jejich vzor v sekci <a href="%{link}">Vzory faktur</a>.
+      feature_examples_title: Je libo daňový doklad nebo zálohovou proforma fakturu včetně vzorů v PDF?
+      feature_proforma_text: V případě přijatých plateb je plně v provozu možnost <strong>napojení systému FakturaOnline.cz na elektronickou evidenci tržeb</strong>. Pro aktivaci vyplňte při vystavování faktury vaše údaje pro EET, otestujte spojení a pak využívejte evidenci tržeb u faktur, které si vyberete.
+      feature_proforma_title: Elektronická evidence tržeb integrována
+      feature_signature_text: Pro zasílání elektronické faktury e-mailem ji nemusíte opatřit elektronickým podpisem. PDF faktura je platný doklad, stejně jako papírová faktura. Elektronickým podpisem by se musela faktura opatřit pouze v případě, že ji chcete pro účely účetnictví uchovávat v elektronické podobě - bez nutnosti tisku do papírové podoby.
+      feature_signature_title: Žádný elektronický podpis na faktuře nepotřebujete!
+      free_invoice: Vystavujte faktury zdarma za méně než 30 vteřin.
+      header_headline: Vystavujte faktury <br/><span class=emphasize>rychle a bezpečně</span>
+      header_headline_alt: Vystavujte faktury <span class=emphasize>rychle a bezpečně</span>
+      header_list1: Nejrychlejší vystavení faktur online.
+      header_list2: Doklady jsou ihned připraveny ke stažení ve formátu Adobe PDF.
+      header_list3: K dispozici všechny druhy dokladů - zálohová a proforma faktura, daňový doklad pro plátce i neplátce DPH a další
+      header_text: Vystavujete faktury dle vzoru v Excelu? <span class='emphasize'>Faktura z FakturaOnline.cz je mnohem více než jen vzor faktury</span>. Její vystavení je snadné, rychlé a vystavená faktura je ve formátu Adobe PDF - populárním univerzálním dokumentovém formátu. Stačí zadat pár údajů do formuláře a ihned máte připravenou PDF fakturu ke stažení.
+      start_using: Začněte ZDARMA využívat FakturaOnline.cz
+      stats_area_text_2: vystavili naši uživatelé za %{month}
+      stats_area_text_3: bylo vyfakturováno za %{month}
+      stats_area_text_4: nám zachovává přízeň
+      stats_area_text_5: na kterých působíme
+      stats_area_title_2: "%{amount} faktur"
+      stats_area_title_3: "%{amount}"
+      stats_area_title_4: "%{amount} uživatelů"
+      stats_area_title_5: 5 trhů
+      recent_posts: Aktuálně z blogu
+  application:
+    navigation:
+      free_in_30_seconds_html: Vystavujte faktury <strong>zdarma</strong> za méně než 30 vteřin.
+      homepage: Úvod
+      invoice: Vystavit fakturu
+      login: Přihlásit se
+      logo_alt: FakturaOnline.cz
+      logo_height: 13
+      logo_width: 229
+    footer:
+      company_name_html: FakturaOnline&nbsp;s.r.o.
+      heading_1: Sledujte nás
+      heading_2: Návody
+      heading_3: Důležité dokumenty
+      heading_4: Další informace
+      heading_5: Pro vývojaře
+      heading_6: Migrace faktur z
+      heading_7: Podpora
+      link_1: Smluvní podmínky
+      link_10: Blog
+      link_11: Facebook
+      link_12: LinkedIn
+      link_13: Manuál
+      link_14: API
+      link_15: BillApp
+      link_16: O nás
+      link_17: Vzory Word a Excel
+      link_18: Začínající podnikatelé
+      link_2: Ceník
+      link_3: Ochrana osobních údajů
+      link_4: Nápověda
+      link_5: Vzory faktur
+      link_6: Cookie Policy
+      link_7: Často kladené otázky
+      link_8: Kontaktujte nás
+      link_9: Neziskové organizace
+      select_region: "Zvolte region:"
+      support_link: https://podpora.fakturaonline.cz

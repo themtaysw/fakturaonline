@@ -1,0 +1,76 @@
+html {
+  font-size: $font-size-default;
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: $font-family;
+  line-height: 1.6;
+  color: $gray-800;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: $primary;
+  text-decoration: underline;
+  outline: none !important;
+}
+
+h1,
+.h1 {
+  margin-bottom: .78em;
+  font-size: rem(45px);
+  line-height: 1.1;
+  font-weight: 700;
+  span {
+    font-weight: 400;
+  }
+
+  @include media('<sm') {
+    font-size: 2rem;
+  }
+}
+
+.h2 {
+  margin-bottom: 0.5em;
+  font-size: rem(32px);
+  line-height: 1.1;
+  font-weight: 700;
+
+  @include media('<sm') {
+    font-size: rem(24px);
+  }
+}
+
+.page-header {
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 30px;
+    @include media('<sm') {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.app-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.title-hidden-xs {
+  .heading-with-image {
+    @include media('<xs') {
+      display: none;
+    }
+  }
+}
+
+.text-big {
+  font-size: rem(17px);
+}

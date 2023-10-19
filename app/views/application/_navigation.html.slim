@@ -1,0 +1,7 @@
+div.navbar
+  .navbar__content
+    = link_to root_path, class: 'navbar__brand'
+      = image_tag "fakturaonline_logo.svg", class: 'navbar__logo', alt: t('.logo_alt'), width: t('.logo_width'), height: t('.logo_height')
+    ul.navbar-navigation
+      span.navbar-cta = t('.free_in_30_seconds_html')
+      = link_to_menu_item :li, t('.invoice'), root_path, class: 'el-button el-button--warning navbar-navigation__link--invoice', wrapper_options: { class: 'navbar-navigation__item navbar-navigation__item--new-invoice' }

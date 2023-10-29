@@ -3,6 +3,8 @@ import Vue from 'vue';
 import VueApollo from 'vue-apollo';
 import { format } from 'date-fns';
 
+import Components from '~/ui-library';
+
 import apolloClient from '../libs/apolloClient';
 import i18n from '~/i18n';
 
@@ -11,6 +13,7 @@ const apolloProvider = new VueApollo({
 });
 
 Vue.use(VueApollo);
+Vue.use(Components, { i18n });
 
 Vue.filter('formatDate', (value, dateFormat) => {
   if (value) {
@@ -30,6 +33,15 @@ if (document.getElementById('hp_blogposts')) {
           onHp: true,
         },
       }),
+    });
+  });
+}
+if (document.getElementById('form')) {
+  import('~/Form.vue').then((module) => {
+    new Vue({
+      el: '#form',
+      i18n,
+      render: h => h(module.default),
     });
   });
 }
